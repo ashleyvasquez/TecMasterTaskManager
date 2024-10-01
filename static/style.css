@@ -1,0 +1,106 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D6CFCA; /* Color claro de la paleta */
+    color: #444;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #565263; /* Color más oscuro de la paleta */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #CBB7AE; /* Color neutro de la paleta */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #A6808B; /* Color cálido de la paleta */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #A6808B; /* Borde con el color cálido */
+    border-radius: 6px;
+    background-color: #CBB7AE; /* Igual que los cuadros de tareas */
+}
+
+button {
+    background-color: #565263; /* Color oscuro para los botones */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #706677; /* Cambio a un tono violeta grisáceo al pasar el ratón */
+}
+
+/* Kanban board styles */
+#kanban-board {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.kanban-column {
+    background-color: #706677; /* Fondo violeta grisáceo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.kanban-column h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #D6CFCA; /* Color claro de la paleta */
+    margin-bottom: 20px;
+}
+
+#tasks-por-hacer, #tasks-en-progreso, #tasks-hecho {
+    min-height: 200px;
+    background-color: #CBB7AE; /* Fondo neutro */
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #A6808B; /* Borde cálido */
+}
+
+/* Estilo para los botones pequeños de mover */
+.task-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.task-buttons button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #A6808B; /* Borde cálido */
+    margin: 20px 0;
+}

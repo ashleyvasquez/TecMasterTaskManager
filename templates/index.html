@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban - TECMaster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Tablero Kanban - TECMaster</h1>
+
+    <!-- Formulario para agregar nuevas tareas -->
+    <form id="task-form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" required>
+        <br>
+        <label for="description">Descripción:</label>
+        <textarea id="description"></textarea>
+        <br>
+        <button type="submit">Agregar Tarea</button>
+    </form>
+
+    <hr>
+
+    <!-- Tablero Kanban -->
+    <div id="kanban-board">
+        <div class="kanban-column" id="por-hacer">
+            <h2>Por Hacer</h2>
+            <div id="tasks-por-hacer"></div>
+        </div>
+        <div class="kanban-column" id="en-progreso">
+            <h2>En Progreso</h2>
+            <div id="tasks-en-progreso"></div>
+        </div>
+        <div class="kanban-column" id="hecho">
+            <h2>Hecho</h2>
+            <div id="tasks-hecho"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
