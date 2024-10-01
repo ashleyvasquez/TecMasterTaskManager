@@ -1,13 +1,13 @@
 {
-    "Por Hacer": [
+    "Por Hacer": [],
+    "En Progreso": [
         {
             "id": 1,
             "title": "Proyecto2",
             "description": "Hacer un tablero Kanban",
-            "status": "Por Hacer"
+            "status": "En Progreso"
         }
     ],
-    "En Progreso": [],
     "Hecho": [
         {
             "id": 2,
